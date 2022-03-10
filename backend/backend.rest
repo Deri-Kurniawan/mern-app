@@ -1,0 +1,32 @@
+# RestClientVsCodeExtension
+###
+# Get all user
+GET http://localhost:5000/users
+
+###
+# Create a new user
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+  "fullName": "Imasnurani",
+  "email": "raninarani21@gmail.com"
+}
+
+###
+# Get user by id
+GET http://localhost:5000/users/13
+
+###
+# Update user by id
+PATCH http://localhost:5000/users/13
+Content-Type: application/json
+
+{
+  "fullName": "Alexander",
+  "email": "alexander@gmail.com"
+}
+
+###
+# Delete user by id
+DELETE http://localhost:5000/users/13
